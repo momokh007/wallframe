@@ -1,0 +1,46 @@
+.logo{
+    display: flex;
+}
+
+.nav-list
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: navy;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background-color: black;
+}
+h1,label{
+    color: white;
+}
+.hedert{
+    display: flex;
+}
+h4{
+    color: white;
+    margin-right: 15px;
+    font-size: 15px;
+}
+h1{
+    color: white;
+    margin-left: 400px;
+    margin-right: 350px;
+    font-size: 50px;
+}

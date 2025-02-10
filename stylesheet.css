@@ -1,0 +1,200 @@
+h1{
+    background-color: black;
+    color: white;
+    margin-left: 500px;
+    margin-right: 275px;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    color: rgb(14, 14, 14);
+}
+body{
+    background-color: black;
+}
+.div{
+    display: flex;
+    text-align: center;
+}
+.img{
+    width: 175px;
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+} 
+h3{
+    color:black;
+    margin-left: 102px;
+    margin-right: 102px;
+}
+#img{
+    margin-left: 230px;
+}
+.h3{
+    margin-left: 290px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.new{
+    width: 150px;
+    margin-left: 585px;
+    border-radius: 10px;
+    background-color: black;
+    height: 50px;
+}
+.b{
+    font-size: 35px;
+}
+#w{
+    width: 175px;
+    border-radius: 5px;
+}
+button{
+    background-color: white;
+    border-radius: 7px;
+    border-color: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.button1{
+    margin-left: 120px;
+}
+.button3{
+    margin-left: 38px;
+    margin-right: 38px;
+}
+#w2{
+    width: 225px;
+    border-radius: 5px;
+}
+section{
+    background-color: white;
+}
+img{
+    width: 190px;
+    height: 225px;
+}
+#one{
+    width: 1350px;
+    height:700px;
+}
+button{
+    height: 310px;
+    width: 230px;
+}
+.all{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+    filter: none;
+}
+#first{
+    background-image: url(   https://postify.store/cdn/shop/files/cover_final.jpg?v=1711568788&width=1500);
+   filter: contrast(80%);
+}
+.h7{
+    color: black;
+}
+.hedert{
+    display: flex;
+}
+h4{
+    margin-right: 10px;
+}
+small{
+    color: white;
+}
+.marquee-rtl {
+    max-width: 76em; /* Largeur de la fenêtre */
+    margin-top: 5px;
+   font-size: 40px;
+    overflow: hidden; /* Masque tout ce qui dépasse */
+    
+}
+
+/* Le bloc défilant */
+.marquee-rtl > :first-child {
+    display: inline-block; /* Modèle de boîte en ligne */
+    padding-right: 2em; /* Un peu d'espace pour la transition */
+    padding-left: 100%; /* Placement à droite du conteneur */
+    white-space: nowrap; /* Pas de passage à la ligne */
+    animation: defilement-rtl 40s infinite linear;
+}
+
+/* Animation proprement dite */
+@keyframes defilement-rtl {
+    0% {
+        transform: translate3d(0, 0, 0); /* Position initiale à droite */
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0); /* Position finale à gauche */
+    }
+}
+@media only screen and (max-width: 600px){
+    .div{
+        display: block;
+    }
+    .resp{
+        display: flex;
+    }
+    .button1{
+        margin-left: 30px;
+    }
+    h1,p,button{
+        text-align: center;
+    }
+    #first{
+        background-image: url(   https://postify.store/cdn/shop/files/cover_final.jpg?v=1711568788&width=);
+       filter: contrast(80%);
+    }
+    .new{
+        margin-left: 75px;
+    }
+   
+    
+        h1 {
+            background-color: black;
+            color: white;
+            margin-left: 45px;
+            margin-right: 25px;
+            font-size: 20px;
+        }
+        button {
+            height: 185px;
+            width: 125px;
+        }
+        img {
+            width: 120px;
+            height: 145px;
+        }
+        #w {
+            width: 115px;
+            border-radius: 5px;
+        }
+        h3 {
+            color: black;
+            margin-left: 00px;
+            margin-right: 00px;
+            font-size: 12px;
+        }
+    h2{
+        font-size: 20px;
+    }
+    body{
+        margin: 0px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    .all{
+        font-size: 15px;
+    }
+}

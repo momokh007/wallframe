@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription</title>
+    <style>
+        /* Styles CSS (comme précédemment) */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form id="registration-form">
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Adresse e-mail" required>
+            <input type="password" placeholder="Mot de passe (8 caractères minimum)" minlength="8" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('registration-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const emailInput = form.querySelector('input[type="email"]');
+            const passwordInput = form.querySelector('input[type="password"]');
+
+            // Vérification de l'e-mail (exemple simplifié)
+            const emailExists = await checkEmailExists(emailInput.value);
+            if (emailExists) {
+                alert("Cet e-mail est déjà utilisé. Veuillez en choisir un autre.");
+                return;
+            }
+
+            // Enregistrement dans un fichier CSV (exemple simplifié)
+            saveToCSV(emailInput.value, passwordInput.value);
+            console.log('Utilisateur inscrit !');
+        });
+
+        // Fonction de vérification de l'e-mail (simulée)
+        async function checkEmailExists(email) {
+            // Ici, vous devriez effectuer une vérification côté serveur
+            // pour voir si l'e-mail est déjà utilisé.
+            // Pour cet exemple, nous supposons que l'e-mail n'existe pas.
+            return false;
+        }
+
+        // Fonction d'enregistrement dans un fichier CSV (simulée)
+        function saveToCSV(email, password) {
+            // Ici, vous devriez écrire le code pour enregistrer les données
+            // dans un fichier CSV ou une base de données.
+            // Pour cet exemple, nous affichons simplement les données dans la console.
+            console.log(`E-mail: ${email}, Mot de passe: ${password}`);
+        }
+    </script>
+</body>
+</html>
+
